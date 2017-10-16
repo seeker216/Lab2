@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="com.zxy.Action" extends="struts-default">
+
+		<action name="searchAuthor" class="com.zxy.Action.authorSearchAction"
+			method="execute">
+			<result name="success">/authorSearch.jsp</result>
+			<result name="error">/authorNotFound.jsp</result>
+		</action>
+		<action name="bookInfo" class="com.zxy.Action.bookInfoAction"
+			method="execute">
+			<result name="success">/bookInfo.jsp</result>
+			<result name="error">/bookNotFound.jsp</result>
+		</action>
+		<action name="deleteBook" class="com.zxy.Action.deleteBookAction"
+			method="execute">
+			<result name="success">/deleteSuccess.jsp</result>
+			<result name="error">/deleteError.jsp</result>
+		</action>
+		<action name="addBook" class="com.zxy.Action.addBookAction"
+			method="execute">
+			<result name="success">/addSuccess.jsp</result>
+			<result name="error">/addAuthor.jsp</result>
+		</action>
+		<action name="addAuthor" class="com.zxy.Action.addAuthorAction"
+			method="execute">
+			<result name="success">/addSuccess.jsp</result>
+		</action>
+		<action name="booklist" class="com.zxy.Action.booklistAction"
+			method="execute">
+			<result name="success">/booklist.jsp</result>
+		</action>
+	</package>
+</struts>
