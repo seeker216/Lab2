@@ -1,5 +1,5 @@
 package com.zxy.Action;
-
+//modified in 5.2
 public class Author {
 	private int authorID;
 	private String name;
